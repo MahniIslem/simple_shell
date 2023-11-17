@@ -13,7 +13,8 @@ char *get_environment(char *var)
 
 	for (i = 0; environ[i]; i++)
 	{
-		if (!_strncmp(environ[i], var, string_length) && environ[i][string_length] == '=')
+		if (!_strncmp(environ[i], var, string_length)
+				&& environ[i][string_length] == '=')
 		{
 			val = environ[i] + _strlen(var) + 1;
 			return (val);
