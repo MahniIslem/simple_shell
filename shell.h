@@ -14,22 +14,22 @@
 #include <limits.h>
 #define _INT_MIN (1 << (sizeof(int) * 8 - 1))
 
-char *findpath(void);
-int handle_builtin(void);
+char *pathfinder(void);
+int btin_func(void);
 int arraycpy(char *dest[], char *src[]);
-int execute_command(void);
-int printarray(char *array[]);
-char *_getenv(char *);
-void free_array(char **arr);
-int _fputchar(int fd, char c);
-int _fputint(int fd, int num);
-int _fputstr(int fd, char *str);
-int _fprintf(int fd, const char *format, char *s1, int n1, char *s2);
-char **strtoarr(char *str, char delim);
-int print_prompt(char *prompt);
-ssize_t _getline(char **line);
+int com_ex(void);
+int arr_print(char *array[]);
+char *get_environment(char *);
+void arr_free(char **arr);
+int _ehandchar(int file_desc, char c);
+int _ehandint(int file_desc, int nm);
+int _ehandstr(int file_desc, char *str);
+int _eprintf(int file_desc, const char *fmt, char *s1, int n1, char *s2);
+char **stoa(char *str, char dl);
+int pmpt_print(char *prompt);
+ssize_t get_line(char **line);
 ssize_t _getchar(char c);
-int exit_stat(char *exit_status);
+int Exit_st(char *st_exit);
 int _atoi(const char *str);
 char *_strcat(char *dest, char *src);
 char *_strcpy(char *dest, char *src);
