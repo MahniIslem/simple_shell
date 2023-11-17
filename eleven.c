@@ -13,7 +13,7 @@ void arr_free(char **array)
 	if (!array)
 		return;
 
-	for (i = 0; arr[i] != NULL; i++)
+	for (i = 0; array[i] != NULL; i++)
 		free(array[i]);
 
 	free(array);
