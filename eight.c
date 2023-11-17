@@ -5,7 +5,7 @@
  * Return: int.
  */
 
-int _atoi(char *s)
+int _atoi(const char *s)
 {
 	int sign = 1, i = 0;
 	unsigned int final = 0;
